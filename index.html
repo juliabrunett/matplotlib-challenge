@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!--Landing Page-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Pymaceuticals</title>
+    <!--Import Stylesheets & Bootstrap Dependencies-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-md navbar-light">
+        
+        <a class="navbar-brand" href="https://juliabrunett.github.io/">
+            <img src="images/logo_smaller.png" id="logo"/></a>
+        <!--Nav Button when size is reduced-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Menu Items: justified to end-->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+
+
+            <ul class="navbar-nav">
+                <!-- Home Link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <!--Dropdown Menu-->
+                <li class="btn-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Regimens
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="./pages/capomulin.html">Capomulin</a>
+                        <a class="dropdown-item" href="./pages/ramicane.html">Ramicane</a>
+                        <a class="dropdown-item" href="./pages/infubinol.html">Infubinol</a>
+                        <a class="dropdown-item" href="./pages/ceftamin.html">Ceftamin</a>
+                    </div>
+                </li>
+                <!--Other Menu Options-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/mouse_dashboard.html">Dashboard</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+<!--Container for Content-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Mouse Tumour Regimen Analysis</h1>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="row">
+            <div class="col-md-10 col-sm-12" id="summary">
+                <h2>Summary:</h2>
+                <hr>
+                <p>In this project, roughly 250 mice treatment regimens were explored and analyzed in a Jupyter Notebook, using Python, Pandas, and Matplotlib.
+                Explore the dataset on this website by looking at the different regimen results and individual mouse results on the <a href="./pages/mouse_dashboard.html">dashboard</a> page.
+
+                </p>
+                <!-- <div class="col-md-12">
+                    <a href="pages/campaign-outcomes.html">
+                        <img src="./images/Campaign_Outcomes.png" id="full-image"/>
+                    </a>
+                </div> -->
+            </div>
+            <!-- GitHub Logo - link to repo -->
+            <div class="col-md-2" id="github-logo">
+                <a href="https://github.com/juliabrunett/matplotlib-challenge" target="_blank">
+                    <img src="images/GitHub-Mark-64px.png"/>
+                </a>
+                <p>Click above to navigate to the main repository for this project.</p>
+            </div>
+        </div>
+        <!-- Report Summary -->
+        <div class="row">
+            <div class="col-md-12 col-sm-12" id="report">
+            <h2>Observations:</h2>
+            <hr>
+            <!-- <p>After analyzing a sample of 4,000 projects, there are three conclusions that can be drawn about Kickstarter campaigns:  </p> -->
+                <ol>
+                    <!-- 1 -->
+                    <li>Bar Chart: Total Number of Measurements per Drug Regimen: Capomulin and Ramicane both have the most number of measurements taken during the drug trial. </li>
+                        <ul>
+                            <li>This means there are a higher number of timepoints connected to the mice Capomulin and Ramicane studied.</li>
+                        </ul>
+                    <!-- 2 -->
+                    <li>In the Summary Statistics, Capomulin and Ramicane both have the lowest mean, median, variance, standard deviation, and standard error of the mean compared to the other treatment regimens.</li>
+                        <ul>
+                            <li>
+                            This could suggest that these treatments are better at reducing the volume of tumors compared to the other treatments.</li>
+                        </ul>
+                    <!-- 3 -->
+                    <li>Box Plots: Final Tumor Volume: Capomulin and Ramicane have smaller IQR's than the other two treatment regimens that were compared (Infubinol and Ceftamin).</li>
+                    <ul>
+                        <li>This means these treatments had relatively consistent results across each mouse compared to the other two treatments.</li>
+                    </ul>
+                    <!-- 4 -->
+                    <li>Scatter Plot: Average Tumor Volume vs. Mouse Weight: The correlation coefficient between Average Tumor Volume and Mouse Weight on the Capomulin treatment is 0.95, which is significant because it is very close to 1.</li>
+                    <ul>
+                        <li>This means there is a strong correlation between the mouse's weight and the average tumor volume on the Capomulin treatment regimen.</li>
+                    </ul>
+                    <!-- 5 -->
+                    <li>Pie Chart: Gender Breakdown of Mice: There is a pretty even split between the gender of the mice studied.</li>
+                    
+                    <ul>
+                        <li>50.9% were Male</li>
+                        <li>49.1% were Female</li>
+                        <li>The average tumor volume between both genders are relatively close, as well.</li>
+                    </ul>
+
+            </ol>
+
+            </div>
+        </div>
+        
+
+    </div>
+
+     <!--Import JavaScript & d3-->
+     <script src="https://d3js.org/d3.v5.min.js"></script>
+</body>
+
+</html>

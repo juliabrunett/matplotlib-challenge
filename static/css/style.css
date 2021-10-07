@@ -1,0 +1,491 @@
+/* Color Palette */
+/* rgb(155, 190, 199) */
+/* rgb(239, 203, 104) */
+/* rgb(0, 42, 50) */
+/* rgb(78, 116, 125) */
+/* Background rgb(235, 235, 235) */
+
+/* CSS HEX
+--british-racing-green: #294A2Fff;
+--hunter-green: #34553Aff;
+--desert-sand: #CAB09Fff;
+--columbia-blue: #C5E0EBff;
+--artichoke: #90A187ff; */
+
+/* Plotly */
+#country-breakdown {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Button Group */
+#button-group {
+    text-align: right;
+}
+
+/* GitHub Logo */
+#github-logo {
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 30px;
+    /* margin-left: 2px; */
+}
+
+#github-logo img {
+    align-self: center;
+    padding: 20px;
+}
+
+/* Filter Form Background */
+.filter-form {
+    margin-bottom: 20px;
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: #90A187ff;
+    border-color: #90A187ff;
+    align-self: right;
+}
+
+/* Heading 1 */
+h1 {
+    font-size: 50px;
+    background: #34553Aff;
+    padding: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: white;
+    font-family: 'Cambria', Georgia, serif;
+}
+
+/* Heading 2 */
+h2 {
+    color: #34553Aff;
+    font-size: 25px;
+    padding: 10px;
+    font-family: 'Cambria', Georgia, serif;
+    font-weight: bold;
+    background-color: white;
+}
+
+/* Body */
+body {
+    background: rgb(235, 235, 235);
+    font-family: 'Cambria', Georgia, serif;
+}
+
+/* Title for Pages */
+#title {
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+#title p {
+    /*text-align: justify;*/
+    padding: 10px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+/* Summary Box */
+#summary {
+    padding: 30px;
+    margin-top: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Report box */
+#report {
+    padding: 30px;
+    margin-top: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Report paragraphs */
+#report p {
+    font-weight: bold;
+}
+
+/* Search Results paragraph */
+#search-results p {
+    padding: 10px;
+}
+
+/* Navbar */
+.navbar {
+    padding: 0px;
+    background: white;
+    width: 100%;
+
+}
+
+/* Table Area */
+#table-area {
+    background-color: white;
+}
+
+/* Navbar: specifically the website title */
+.navbar-light .navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    /* background: #90A187ff; */
+    padding: 20px;
+    margin-left: 20px;
+    color: white;
+    font-family: 'Cambria', Georgia, serif;
+
+}
+
+/* Main Logo */
+#logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    margin-left: 1px;
+    padding: 0px;
+    border: #90A187ff solid;
+    border-width: 8px;
+}
+
+/* Navbar: list objects */
+.navbar li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Navbar: list objects (link text) */
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-align: right;
+
+}
+
+/* Box objects */
+.box {
+    padding: 10px;
+    height:100px;
+    width:100px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* Summary Box: for index.html */
+#summaryBox {
+    background-color: white;
+    height: auto;
+    width: 100%;
+}
+
+/* Preview Box: for index.html & vis pages */
+#previewBox {
+    background-color: white;
+    height: auto;
+    width: 100%;
+}
+
+/* Comparisons Box: for comparisons.html */
+#comparisonsBox {
+    background-color: white;
+    height: auto;
+    width: 100%;
+}
+
+/* Data Box: for data.html */
+#dataBox {
+    background-color: white;
+    height: auto;
+    width: 100%;
+}
+
+/* Visualization Preview: Heading 2 */
+.visualization_preview h2 {
+    text-align: center;
+}
+
+/* Visualization Preview: Images (goes with previewBox) */
+.visualization_preview img {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+/* Visualization Image: for each vis.html (main box) */
+#visualization-image {
+    float: left;
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Summary Image: for summary image on index.html */
+#summary-image {
+    margin-right: 20px;
+    width: 60%;
+    float: left;
+}
+
+/* Full Image: for full image */
+#full-image {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+/* Pivot Image: for pivot table images */
+#pivot-image {
+    margin-top: 20px;
+    width: 50%;
+    float: center;
+    margin-bottom: 20px;
+}
+
+/* Pivot Image: for pivot table images */
+#pivot-image-2 {
+    /* margin-top: 20px; */
+    width: 100%;
+    float: right;
+}
+
+/* Pivot Image: for pivot table images */
+#pivot-image-3 {
+    /* margin-top: 20px; */
+    width: 60%;
+    float: right;
+}
+
+/* Comparisons Images: for comparisons.html */
+#comparisons-image {
+    width: 40%;
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-content: center;
+}
+
+/* Preview Description paragraphs: for index.html and vis pages  */
+#preview-description p {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Navbar: toggler when page is reduced */
+.navbar-light .navbar-toggler {
+    color: #808080;
+    border-color: white;
+    margin-right: 15px;
+}
+
+/* Dropdown Item: when active */
+.dropdown-item.active {
+    background-color: #294A2Fff;
+}
+
+/* Image: when active page */
+.active img {
+    border: solid #294A2Fff;
+    border-width: 2px;
+}
+
+/* Paragraph attribute */
+p a {
+    color:#294A2Fff;
+    text-decoration: underline;
+    
+}
+
+/* List attribute */
+li a {
+    color:#294A2Fff;
+    text-decoration: underline;
+}
+
+/* Table Headers */
+#table-area th {
+    text-align: center;
+}
+
+/* Media Query: when width is reduced 765px*/
+@media (max-width: 765px) {
+    /* Body */
+    body {
+        background: white;
+        font-family: 'Cambria', Georgia, serif;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 0px;
+        background: #294A2Fff;
+        width: 100%;
+    }
+
+    /* Navbar: specifically the website title */
+    .navbar-light .navbar-brand {
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        background: #294A2Fff;
+        padding: 20px;
+        margin-left: 20px;
+        font-family: 'Cambria', Georgia, serif;
+    }
+
+    /* Navbar: list objects */
+    .navbar li {
+        display: inline-block;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    /* Navbar: links text */
+    .navbar li a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        text-align: right;
+
+    }
+
+    /* Boxes */
+    .box {
+        padding: 10px;
+        height:100px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    /* Visualization Preview: Images (goes with previewBox)  */
+    .visualization_preview img {
+        float: left;
+        width: 50%;
+        padding: 5px;
+        align-content: center;
+    }
+
+    /* Visualization Preview: Heading 2 */
+    .visualization_preview h2 {
+        text-align: left;
+    }
+
+    /* Visualization Image: for each vis.html (main box) */
+    #visualization-image {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Summary Box: for index.html */
+    #summaryBox {
+        background-color: white;
+        height: auto;
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Containers */
+    .container {
+        margin-left: 30px;
+        margin-right: 30px;
+        align-content: center;
+        padding: 10px;
+    }
+
+    /* Paragraphs */
+    p {
+        text-align: left;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    /* Navbar Links when size reduced*/
+    .navbar-light .navbar-nav .nav-link {
+        color: white;
+    }
+
+    /* Comparisons Images: for comparisons.html */
+    #comparisons-image {
+        width: 100%;
+        padding: 10px;
+        align-content: center;
+    }
+}
+
+/* Media Query: when width is reduced 577px*/
+@media (max-width: 577px) {
+    /* Navbar: specifically the website title */
+    .navbar-light .navbar-brand {
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 10px;
+    }
+    /* Visualization Preview: Images (goes with previewBox)  */
+    .visualization_preview img {
+        float: left;
+        width: 40%;
+        padding: 5px;
+        margin-right: 5px;
+        margin-left: 5px;
+
+    }
+    h2 { 
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+      /* Visualization Image: for each vis.html (main box) */
+    #visualization-image {
+        width: 90%;
+        padding: 5px;
+    }
+    
+    /* Summary Image: for summary image on index.html */
+    #summary-image {
+        margin-right: 10px;
+        width: 40%;
+        float: left;
+    }
+
+    #preview-description p {
+        text-align:left;
+    }
+
+    /* Summary Box: for index.html & vis.html*/
+    #summaryBox {
+        width: 90%;
+        padding: 10px;
+    }
+
+}
