@@ -124,6 +124,7 @@ d3.json("../../data/mouse_data.json").then((mouse_data) => {
         var regimens = filteredData.map(d => d.drug_regimen);
         var sex = filteredData.map(d => d.sex);
         var metastatic_sites = filteredData.map(d => d.metastatic_sites);
+        var age = filteredData.map(d => d.age_months);
 
         var trace1 = {
             x: timepoints,
@@ -154,13 +155,14 @@ d3.json("../../data/mouse_data.json").then((mouse_data) => {
         // metastatic_sites
 
         // Append a list option with each demographic value
+        card_list.append("li").text(`Mouse ID: ${mouseID}`).attr("class", "list-group-item");
+        card_list.append("li").text(`Age: ${age[0]} months`).attr("class", "list-group-item");
         card_list.append("li").text(`Regimen: ${regimens[0]}`).attr("class", "list-group-item");
         card_list.append("li").text(`Weight: ${weight[0]} g`).attr("class", "list-group-item");
         card_list.append("li").text(`Sex: ${sex[0]}`).attr("class", "list-group-item");
         card_list.append("li").text(`Metastatic Sites: ${metastatic_sites[0]}`).attr("class", "list-group-item");
-        card_list.append("li").text(`Mouse ID: ${mouseID}`).attr("class", "list-group-item");
-        // card_list.append("li").text(`Bellybutton Type: ${bb_type}`).attr("class", "list-group-item");
-        // card_list.append("li").text(`Wash Frequency: ${wfreq[0]}`).attr("class", "list-group-item");
+        
+        
        
         
     //     // Indicator Plot trace
@@ -236,12 +238,33 @@ d3.json("../../data/mouse_data.json").then((mouse_data) => {
         var weight = filteredData.map(d => d.weight_g);
         var volume = filteredData.map(d => d.tumor_vol_mm3);
         var regimens = filteredData.map(d => d.drug_regimen);
+        var sex = filteredData.map(d => d.sex);
+        var metastatic_sites = filteredData.map(d => d.metastatic_sites);
+        var age = filteredData.map(d => d.age_months);
 
         // Restyle the bar plot with new data
         Plotly.restyle(line_plot, "x", [timepoints]);
         Plotly.restyle(line_plot, "y", [volume]);
+
+        // DEMOGRAPHIC CARD
+        // Select the card location
+        card_list = d3.select("#list-group");
+
+        // Clear the demograhic card
+        card_list.html("");
+        
+        // Append a list option with each demographic value
+        card_list.append("li").text(`Mouse ID: ${mouseID}`).attr("class", "list-group-item");
+        card_list.append("li").text(`Age: ${age[0]} months`).attr("class", "list-group-item");
+        card_list.append("li").text(`Regimen: ${regimens[0]}`).attr("class", "list-group-item");
+        card_list.append("li").text(`Weight: ${weight[0]} g`).attr("class", "list-group-item");
+        card_list.append("li").text(`Sex: ${sex[0]}`).attr("class", "list-group-item");
+        card_list.append("li").text(`Metastatic Sites: ${metastatic_sites[0]}`).attr("class", "list-group-item");
+        
+        
+    };
         
 
-    }
+    
 
 });
