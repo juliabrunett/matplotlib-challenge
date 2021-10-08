@@ -12,21 +12,6 @@
 --columbia-blue: #C5E0EBff;
 --artichoke: #90A187ff; */
 
-/* Plotly */
-#country-breakdown {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 100%;
-    padding: 10px;
-}
-
-/* Button Group */
-#button-group {
-    text-align: right;
-}
-
 /* GitHub Logo */
 #github-logo {
     background-color: white;
@@ -197,27 +182,6 @@ body {
     width: 100%;
 }
 
-/* Preview Box: for index.html & vis pages */
-#previewBox {
-    background-color: white;
-    height: auto;
-    width: 100%;
-}
-
-/* Comparisons Box: for comparisons.html */
-#comparisonsBox {
-    background-color: white;
-    height: auto;
-    width: 100%;
-}
-
-/* Data Box: for data.html */
-#dataBox {
-    background-color: white;
-    height: auto;
-    width: 100%;
-}
-
 /* Visualization Preview: Heading 2 */
 .visualization_preview h2 {
     text-align: center;
@@ -252,44 +216,10 @@ body {
     margin-bottom: 20px;
 }
 
-/* Pivot Image: for pivot table images */
-#pivot-image {
-    margin-top: 20px;
-    width: 50%;
-    float: center;
-    margin-bottom: 20px;
-}
-
-/* Pivot Image: for pivot table images */
-#pivot-image-2 {
-    /* margin-top: 20px; */
-    width: 100%;
-    float: right;
-}
-
-/* Pivot Image: for pivot table images */
-#pivot-image-3 {
-    /* margin-top: 20px; */
-    width: 60%;
-    float: right;
-}
-
-/* Comparisons Images: for comparisons.html */
-#comparisons-image {
-    width: 40%;
-    padding: 10px;
-    margin-right: 20px;
-    margin-left: 50px;
+/* Bubble Plot */
+#bubble-plot {
     margin-top: 10px;
-    margin-bottom: 10px;
-    align-content: center;
-}
-
-/* Preview Description paragraphs: for index.html and vis pages  */
-#preview-description p {
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
+    margin-bottom: 30px;
 }
 
 /* Navbar: toggler when page is reduced */
@@ -323,10 +253,6 @@ li a {
     text-decoration: underline;
 }
 
-/* Table Headers */
-#table-area th {
-    text-align: center;
-}
 
 /* Media Query: when width is reduced 765px*/
 @media (max-width: 765px) {
