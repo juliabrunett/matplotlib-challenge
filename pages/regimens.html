@@ -34,6 +34,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html">Home</a>
                 </li>
+
                 <!--Other Menu Options-->
                 <li class="nav-item">
                     <a class="nav-link" href="./pages/regimens.html">Regimens</a>
@@ -46,63 +47,34 @@
         </div>
     </nav>
 
-    <!-- Title Header -->
+<!--Container for Content-->
     <div class="container">
         <div class="row">
-            <div class="col-md-12 jumbotron text-center">
-                <h1>Mouse Dashboard</h1>
-                <p>Select a Mouse ID to explore the results</p>
+            <div class="col-md-12 text-center main-title">
+                <h1>Top 4 Regimen Results</h1>
             </div>
         </div>
-    </div>
 
-    <!-- Top Container -->
-    <div class="container">
+        <!-- Summary -->
         <div class="row">
-            <div class="col-md-3 col-sm-5">
-                <!-- Dropdown Selection Menu -->
-                <div id="dropdown-menu" class="text-center">
-                    <h3>Mouse ID</h3>
-                    <select id="selID">
-                        <option>Select an ID:</option>
-                    </select>
-                </div>
-                <!-- Details Card -->
-                <div class="card" style="width: 15rem;">
-                    <div class="card-header text-center">
-                        <h3>Details</h3>
-                    </div>
-                    <!-- List of Details Information -->
-                    <ul class="list-group list-group-flush" id="list-group"></ul>
-                </div>
-            </div>
-            <div class="col-md-9">
-                <!-- Bubble Plot -->
-                <div id="bubble-plot"></div>
-            </div>
-        </div>
-            
-    </div>
-    
-    <!-- Bottom Container -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <!-- Line Plot -->
-                <div id="line-plot"></div>
+            <div class="col-md-12" id="summary">
+                <h2>Summary:</h2>
+                <hr>
+                <img src="../images/box_plot_all.png" id="summary-image"/>
+                <img src="../images/box_plot_individual.png" id="summary-image"/>
+                <img src="../images/bar_chart.png" id="summary-image"/>
+                <img src="../images/line_graph.png" id="summary-image"/>
+                <img src="../images/pie_chart.png" id="summary-image"/>
+                <img src="../images/regression_line.png" id="summary-image"/>
+                <p>
+
+                </p>
                 
             </div>
-            <div class="col-md-4">
-                <!-- Indicator Plot -->
-                <div id="indicator-plot"></div>
-            </div>
-            
-        </div>
-    </div>
 
-    <!-- Data & JavaScript -->
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="../data/mouse_data.json"></script>
-    <script src="../static/js/app.js"></script>
+        </div>
+    </div>  
+
 </body>
+
 </html>

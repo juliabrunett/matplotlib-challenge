@@ -34,19 +34,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Home</a>
                 </li>
-                <!--Dropdown Menu-->
-                <li class="btn-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Regimens
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="./pages/capomulin.html">Capomulin</a>
-                        <a class="dropdown-item" href="./pages/ramicane.html">Ramicane</a>
-                        <a class="dropdown-item" href="./pages/infubinol.html">Infubinol</a>
-                        <a class="dropdown-item" href="./pages/ceftamin.html">Ceftamin</a>
-                    </div>
-                </li>
                 <!--Other Menu Options-->
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/regimens.html">Regimens</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./pages/mouse_dashboard.html">Dashboard</a>
                 </li>
@@ -58,7 +49,7 @@
 <!--Container for Content-->
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center main-title">
                 <h1>Mouse Tumour Regimen Analysis</h1>
             </div>
         </div>
@@ -86,9 +77,27 @@
                 <p>Click above to navigate to the main repository for this project.</p>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12" id="plots">
+                <img src="../images/box_plot_all.png" id="summary-image"/>
+                <!-- <img src="../images/box_plot_individual.png" id="summary-image"/> -->
+                <img src="../images/pie_chart.png" id="summary-image"/>
+                <img src="../images/bar_chart.png" id="summary-image"/>
+                <img src="../images/line_graph.png" id="summary-image"/>
+                
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="plots">
+            
+            <img src="../images/regression_line.png" id="summary-image"/>
+            </div>
+        </div>
+       
         <!-- Report Summary -->
         <div class="row">
-            <div class="col-md-12 col-sm-12" id="report">
+            <div class="col-md-12" id="report">
             <h2>Observations:</h2>
             <hr>
             <!-- <p>After analyzing a sample of 4,000 projects, there are three conclusions that can be drawn about Kickstarter campaigns:  </p> -->
@@ -126,7 +135,9 @@
             </ol>
 
             </div>
+           
         </div>
+
         
 
     </div>
