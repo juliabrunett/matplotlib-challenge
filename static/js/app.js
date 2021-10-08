@@ -122,15 +122,17 @@ d3.json("../../data/mouse_data.json").then((mouse_data) => {
         // Line Plot layout
         var layout1 = {
             title:'Volume Progress Over Time',
+            height: 400,
             xaxis: {
                 title: 'Timepoint',
                 showgrid: false,
                 zeroline: false
             },
             yaxis: {
-            title: 'Volume',
-            showline: false
-            }
+                title: 'Volume',
+                showline: false
+            },
+            font: { family: 'Times' }
         };
 
         var bubbleData = mouse_data.filter(mouse => mouse.drug_regimen == regimens[0]);
@@ -154,8 +156,7 @@ d3.json("../../data/mouse_data.json").then((mouse_data) => {
         var layout2 = {
             title: `Tumor Progress by Weight: ${regimens[0]}`,
             showlegend: false,
-            // height: 600,
-            // width: 1200,
+            height: 500,
             xaxis: {
                 title: "Mouse ID"
             },
@@ -182,7 +183,6 @@ d3.json("../../data/mouse_data.json").then((mouse_data) => {
                 title: "Mouse Age<br><span style='font-size:0.8em;color:gray'>Months</span>",
                 type: "indicator",
                 mode: "gauge+number",
-                // delta: { reference: 3 },
                 gauge: {
                     bar: { color: '#518290' },
                     axis: { range: [1, 24] },
@@ -207,7 +207,7 @@ d3.json("../../data/mouse_data.json").then((mouse_data) => {
         ];
         
         // Indicator Layout
-        var layout3 = { margin: { t: 100, b: 100 }, font: { family: 'Times' } };
+        var layout3 = { margin: { t: 100, b: 100 }, font: { family: 'Times' }, height: 400 };
 
         var config = { responsive: true };
         
