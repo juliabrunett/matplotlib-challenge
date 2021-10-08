@@ -39,6 +39,7 @@ d3.json("../../data/mouse_data.json").then((mouse_data) => {
         var weight = mouse_data.map(d => d.weight_g);
         var volume = mouse_data.map(d => d.tumor_vol_mm3);
         var regimens = mouse_data.map(d => d.drug_regimen);
+        var ids = mouse_data.map(d=> d.mouse_id);
 
         // Define arrays
         var minTime = [];
@@ -64,7 +65,7 @@ d3.json("../../data/mouse_data.json").then((mouse_data) => {
                 endVol.push(volume[i]);
                 drugRegimen.push(regimens[i]);
                 endWeight.push(weight[i]);
-                mouse_ids.push(uniqueIDs[i]);
+                mouse_ids.push(ids[i]);
                 // console.log(ids[i], max_time);
             }
             // If the current mouse is not the same as previous
@@ -115,13 +116,17 @@ d3.json("../../data/mouse_data.json").then((mouse_data) => {
         var trace1 = [{
             x: timepoints,
             y: volume,
+            line: {
+                color: '#7B9EA8',
+                width: 2
+            },
             type: 'scatter',
             name: 'Volume'
         }];
 
         // Line Plot layout
         var layout1 = {
-            title:'Volume Progress Over Time',
+            title:`Tumor Volume Progress Over Time: ${mouseID}`,
             height: 400,
             xaxis: {
                 title: 'Timepoint',
@@ -147,14 +152,14 @@ d3.json("../../data/mouse_data.json").then((mouse_data) => {
             mode: 'markers',
             marker: {
                 color: bubbleValues[0],
-                colorscale: 'Greens',
+                colorscale: 'RdBu',
                 size: bubbleValues[1]
             }
         }];
         
         // Bubble plot layout
         var layout2 = {
-            title: `Tumor Progress by Weight: ${regimens[0]}`,
+            title: `Tumor Volume Progress by Weight: ${regimens[0]}`,
             showlegend: false,
             height: 500,
             xaxis: {
@@ -184,7 +189,7 @@ d3.json("../../data/mouse_data.json").then((mouse_data) => {
                 type: "indicator",
                 mode: "gauge+number",
                 gauge: {
-                    bar: { color: '#518290' },
+                    bar: { color: '#0D3B66' },
                     axis: { range: [1, 24] },
                     steps: [
                         { range: [1, 3], color: '#F2F7F8'},
@@ -259,6 +264,7 @@ d3.json("../../data/mouse_data.json").then((mouse_data) => {
         // Restyle the line plot with new data
         Plotly.restyle(line_plot, "x", [timepoints]);
         Plotly.restyle(line_plot, "y", [volume]);
+        Plotly.relayout(line_plot,"title", `Tumor Volume Progress Over Time: ${mouseID}`);
 
         // Restyle the bubble plot with new data
         Plotly.restyle(bubble_plot, "x", [bubbleValues[3]]);
@@ -266,7 +272,7 @@ d3.json("../../data/mouse_data.json").then((mouse_data) => {
         Plotly.restyle(bubble_plot, "hovertext", [bubbleValues[3]]);
         Plotly.restyle(bubble_plot, "marker.size", [bubbleValues[1]]);
         Plotly.restyle(bubble_plot, "marker.color", [bubbleValues[0]]);
-        Plotly.relayout(bubble_plot, "title", `Tumor Progress by Weight: ${regimens[0]}`)
+        Plotly.relayout(bubble_plot, "title", `Tumor Volume Progress by Weight: ${regimens[0]}`)
 
         // Restyle the indicator plot with new data
         Plotly.restyle(indicator_plot, "value", [age[0]]);
