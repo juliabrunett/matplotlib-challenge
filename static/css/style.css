@@ -38,10 +38,40 @@
     align-self: right;
 }
 
+/* Bubble Plot */
+#bubble-plot {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Gauge Plot */
+#indicator-plot {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Jumbotron: title header box */
+.jumbotron {
+    margin-top: 40px;
+    background-color:#34553Aff;
+    /* color: rgb(239, 203, 104); */
+    
+}
+
+.jumbotron h1 {
+    font-size: 60px;
+}
+
+/* Jumbotron sub-text */
+.jumbotron p {
+    color: white;
+    font-size: 20px;
+}
+
 /* Heading 1 */
 h1 {
     font-size: 50px;
-    background: #34553Aff;
+    /* background: #34553Aff; */
     padding: 30px;
     margin-left: 20px;
     margin-top: 20px;
@@ -115,11 +145,6 @@ body {
 
 }
 
-/* Table Area */
-#table-area {
-    background-color: white;
-}
-
 /* Navbar: specifically the website title */
 .navbar-light .navbar-brand {
     font-size: 25px;
@@ -182,26 +207,6 @@ body {
     width: 100%;
 }
 
-/* Visualization Preview: Heading 2 */
-.visualization_preview h2 {
-    text-align: center;
-}
-
-/* Visualization Preview: Images (goes with previewBox) */
-.visualization_preview img {
-    float: left;
-    width: 50%;
-    padding: 5px;
-}
-
-/* Visualization Image: for each vis.html (main box) */
-#visualization-image {
-    float: left;
-    width: 100%;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
 /* Summary Image: for summary image on index.html */
 #summary-image {
     margin-right: 20px;
@@ -216,11 +221,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Bubble Plot */
-#bubble-plot {
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
+
 
 /* Navbar: toggler when page is reduced */
 .navbar-light .navbar-toggler {
